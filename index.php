@@ -34,7 +34,35 @@
 				$result = add(3, 4);
 					echo $result;
 			?>
+		<h3>Mitme väärtuse tagastamine</h3>
+			 <ul>
+				<?php
+					function calculate($nr1, $nr2) {
+						$plus = $nr1 + $nr2;
+						$minus = $nr1 - $nr2;
+					return array($plus, $minus);
+					}
+					$result = calculate(10, 5);
+						echo "<li>Numbrite summa on {$result[0]}</li>";
+						echo "<li>Numbrite vahe on {$result[1]}</li>";
+  
+				?>
+			</ul>
 			
-			
+			<ol>
+				<?php
+					function calc($nr1, $nr2) {
+						$plus = $nr1 + $nr2;
+						$minus = $nr1 - $nr2;
+
+					return array($plus, $minus);
+					}
+
+					list($plus, $minus) = array(100, 50);
+						echo "<li>Numbrite summa on {$plus}</li>";
+						echo "<li>Numbrite vahe on {$minus}</li>";
+	
+				?>
+			</ol>	
 </body>
 </html>
