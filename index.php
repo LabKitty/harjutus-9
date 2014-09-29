@@ -21,6 +21,19 @@
 				}
 				say_hello_to("Veronika");
 			?>
+			<?php
+				say_hello();
+				say_hello_to("Maile");
+			?>
+		 <h3>Väärtuse tagastamine</h3>
+			<?php
+				function add($number1, $number2) {
+					$sum = $number1 + $number2;
+						return $sum;
+				}
+				$result = add(3, 4);
+					echo $result;
+			?>
 			
 			
 </body>
